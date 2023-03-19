@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Home</title>
+</head>
+
+<body class="container">
+    <header>
+        <h1>TO DO LIST</h1>
+    </header>
+    <section class="formulario">
+        <form class="inputToDo">
+            <input type="text" id="input_descripcion" placeholder="Descripción de tu tarea">
+            <input value="" type="text" id="input_deadline" onblur="(this.type='text')" onfocus="(this.type='date')"
+                placeholder="Fecha deadline">
+            <select id="select_prioridad" name="prioridad" value="">
+                <option disabled selected hidden>Elegí la prioridad</option>
+                <option value="alta">Alta</option>
+                <option value="media">Media</option>
+                <option value="baja">Baja</option>
+            </select>
+            <div class="botonera">
+                <button id="boton_agregar">Agregar</button>
+                <button id="boton_limpiar">Limpiar listado</button>
+            </div>
+        </form>
+    </section>
+    <section class="prioritarias">
+        <h2>Tareas prioritarias</h2>
+        <p>(con deadline)</p>
+        <table id='tabla_prioritarias'>
+            <tr>
+                <th>Descripcion</th>
+                <th>Deadline</th>
+                <th>Acción</th>
+            </tr>
+        </table>
+
+    </section>
+    <section class="otras">
+        <h2>Prioridad media y baja</h2>
+        <p>(con prioridad y deadline)</p>
+        <table id="tabla_no_prioritarias">
+            <tr>
+                <th>Descripcion</th>
+                <th>Prioridad</th>
+                <th>Deadline</th>
+                <th>Acción</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <div></div>
+        </table>
+    </section>
+    <footer><a href="./registro.html" class="footer_link">Visualizar registro</a></footer>
+    <script src="./app.js"></script>
+</body>
+
+</html>

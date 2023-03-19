@@ -1,0 +1,168 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
+.container {
+  display: grid;
+  grid-template-areas: "encabezado encabezado encabezado encabezado" "formulario formulario prioritarias otras" "pie pie pie pie";
+  grid-template-columns: 0.7fr 0.7fr 1fr 1.6fr;
+  grid-template-rows: 80px 580px 40px; }
+
+header {
+  grid-area: encabezado; }
+
+.formulario {
+  grid-area: formulario; }
+
+.prioritarias {
+  grid-area: prioritarias;
+  border-left: 1px dotted black;
+  padding: 10px; }
+
+.otras {
+  grid-area: otras;
+  border-left: 1px dotted black;
+  padding: 10px; }
+
+footer {
+  grid-area: pie;
+  background-color: black; }
+
+.container_registro {
+  display: grid;
+  grid-template-areas: "encabezado_registro encabezado_registro encabezado_registro encabezado_registro" "registro registro registro registro" "pie_registro pie_registro pie_registro pie_registro";
+  grid-template-columns: 0.7fr 0.7fr 1fr 1.6fr;
+  grid-template-rows: 80px 580px 40px; }
+
+.header_registro {
+  grid-area: encabezado_registro; }
+
+.registro {
+  grid-area: registro; }
+
+.footer_registro {
+  background-color: black;
+  grid-area: pie_registro;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .footer_registro .footer_link {
+    color: white;
+    font-family: MontserratRegular;
+    font-size: 0.8rem; }
+
+.tabla_registro {
+  width: 70%;
+  margin-left: 70px; }
+
+@font-face {
+  font-family: MontserratLight;
+  src: url("../../css/fonts/Montserrat-Light.ttf"); }
+
+@font-face {
+  font-family: MontserratBold;
+  src: url("../../css/fonts/Montserrat-Bold.ttf"); }
+
+@font-face {
+  font-family: MontserratRegular;
+  src: url("../../css/fonts/Montserrat-Regular.ttf"); }
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: MontserratBold;
+  background-color: black;
+  font-size: 1rem; }
+
+input, select, button {
+  margin-top: 60px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-width: 1px; }
+
+button {
+  border: 0;
+  background-color: white;
+  font-family: MontserratRegular;
+  color: gray;
+  margin-left: 20px; }
+
+input::placeholder {
+  font-family: MontserratRegular;
+  color: gray; }
+
+::-webkit-datetime-edit {
+  font-family: MontserratRegular;
+  color: grey; }
+
+input:focus, select:focus {
+  outline: none; }
+
+option, select {
+  font-family: MontserratRegular;
+  color: gray; }
+
+.inputToDo {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-top: 100px;
+  margin-left: 50px; }
+
+.prioritarias, .otras, .tabla_registro {
+  display: flex;
+  flex-direction: column; }
+  .prioritarias h2, .otras h2, .tabla_registro h2 {
+    font-family: MontserratBold;
+    margin-top: 50px;
+    font-size: 1rem; }
+  .prioritarias p, .otras p, .tabla_registro p {
+    font-family: MontserratRegular;
+    font-size: 1rem; }
+  .prioritarias ol, .otras ol, .tabla_registro ol {
+    margin-top: 20px; }
+    .prioritarias ol li, .otras ol li, .tabla_registro ol li {
+      font-family: MontserratLight;
+      margin-left: 20px; }
+
+.red {
+  color: #880808;
+  font-family: MontserratBold; }
+
+.yellow {
+  color: #d9b647;
+  font-family: MontserratBold; }
+
+.green {
+  color: #56901f;
+  font-family: MontserratBold; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  margin-top: 40px; }
+  table button {
+    margin: 0; }
+  table th {
+    font-family: MontserratBold;
+    font-size: 0.7rem; }
+  table td {
+    font-family: MontserratLight;
+    font-size: 0.7rem; }
+
+.delete_icon {
+  width: 10px; }
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  footer .footer_link {
+    color: white;
+    font-family: MontserratRegular;
+    font-size: 0.8rem; }
